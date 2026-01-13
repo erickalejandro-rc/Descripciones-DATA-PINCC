@@ -1,0 +1,346 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary: #1a5276;
+            --secondary: #2980b9;
+            --accent: #16a085;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --text: #34495e;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        /* Header y navegación */
+        header {
+            background: var(--light);
+            
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1500px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .logo_pincc_header{
+            /*width: 240px;*/
+            height: 119px;
+            text-align: left;
+        }
+        .logo_UNAM{
+            /*
+            width: 120px;
+            height:79.88px ;*/
+            text-align: right; 
+        }
+
+
+
+        .logo i {
+            font-size: 2rem;
+            color: var(--accent);
+        }
+
+        .logo h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: black;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+
+        .nav-links a:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-2px);
+        }
+ 
+
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .btn:hover {
+            background: #138d75;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        /* Contenedor Principal */
+        .contenedor-principal {
+            max-width: 1200px;
+            margin: 2rem auto 5rem;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+
+        /* Tarjetas */
+        .tarjeta {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: all 0.4s ease;
+            display: flex;
+            flex-direction: column;
+            height: fit-content;
+        }
+
+        .tarjeta:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .tarjeta-header {
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .tarjeta-header i {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .tarjeta-header h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .tarjeta-body {
+            padding: 2rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .tarjeta-body p {
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .tarjeta-footer {
+            padding: 1rem 2rem 2rem;
+            text-align: center;
+        }
+
+        /* Colores específicos para cada tarjeta */
+        .QE .tarjeta-header{
+            background: linear-gradient(to right, #e67e22, #f39c12);
+
+        }
+     
+
+        .objetivo .tarjeta-header {
+            background: linear-gradient(to right, #58BB43, #78D23D);
+        }
+        .item {
+            background: #f2f2f2;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 5px;
+            cursor: pointer;
+            user-select: none;
+        }
+        .descripcion {
+            display: none;
+            background: #e8e8e8;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 5px;
+            margin-bottom: 1rem;
+        }
+        /*Videos relacionados con DATA-PINCC*/
+        .videos {
+            background: var(--dark);
+            color: white;
+            padding: 4rem 2rem;
+            margin: 5rem 0;
+        }
+         .videos-container {
+            max-width: 2000px;
+            margin: 0 auto;
+            /*display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;*/
+        }
+
+        .videos-horizontal {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .video-item {
+         flex: 0 1 auto;
+        }
+
+        .video-item iframe {
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+
+
+
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 4rem 2rem 2rem;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+        }
+
+        .footer-col h4 {
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .footer-col h4::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--accent);
+        }
+
+        .footer-col p, .footer-col a {
+            color: #bdc3c7;
+            margin-bottom: 1rem;
+            display: block;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-col a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-links a {
+            background: rgba(255,255,255,0.1);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: var(--accent);
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 3rem;
+            margin-top: 3rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #95a5a6;
+            font-size: 0.9rem;
+        }
+
+        /* Para dispositivos moviles*/
+       
+
+        @media (max-width: 768px) {
+    .nav-container {
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 0.5rem; 
+    }
+
+    .nav-links {
+        gap: 0.5rem; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+    }
+
+    
+    .nav-links a {
+        font-size: 0.9rem; 
+        padding: 0.4rem 0.8rem; 
+    }
+
+    .poster h2 {
+        font-size: 2.2rem;
+    }
+
+    .poster p {
+        font-size: 1.1rem;
+    }
+
+    .contenedor-principal {
+        grid-template-columns: 1fr;
+    }
+}
