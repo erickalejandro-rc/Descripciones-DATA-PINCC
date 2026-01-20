@@ -82,51 +82,100 @@
             transition: all 0.3s ease;
             padding: 0.5rem 1rem;
             border-radius: 4px;
-
-            
         }
 
-        .nav-links a:hover
-         {
+        .nav-links a:hover {
             background: rgba(255,255,255,0.2);
             transform: translateY(-2px);
             color: var(--primary);
         }
-      
+       
 
- 
+        /* Poster republica mexicana */
+        .poster {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url(MAPA-SATELITAL.webp);
+            background-size: cover; /* Cubre todo el espacio disponible */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat;            
+            color: white;
+            text-align: center;
+            padding: 8rem 2rem;
+            margin-bottom: 4rem;
+            
+        }
+
+        .poster h2 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .poster p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+        .btn-entrada{
+            
+            font-family: "Archivo Narrow", sans-serif;
+            font-size: 1.9rem;
+            font-weight: 700;
+            color: #ffffff;
+
+            text-decoration: none;
+            text-transform: none;
+            letter-spacing: 0;
+            line-height: 50px;
+            white-space: normal;
+
+            display: inline-block;
+            background: transparent;
+
+            border: none;
+            border-bottom: 2px solid #1c90d8;
+            border-radius: 0;
+
+            padding: 0;
+            margin: 0;
+
+            cursor: pointer;
+        }
+        .btn-entrada:hover{
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+            font-size: 2.3rem;
+            
+
+        }
 
         .btn {
             display: inline-block;
-            background: var(--accent);
-            color: white;
-            padding: 12px 30px;
+            background: var(--light);
+            color: black;
+            padding: 4px 10px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            font-size: 15px;
+            margin-top: 15px;
         }
 
         .btn:hover {
-            background: #138d75;
+            background: var(--secondary);
+            /**background: #6ea59a;**/
             transform: translateY(-3px);
             box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-        }
-        /**Contenedor conceptos**/
-        .conceptos{
-            max-width: 1200px;
-            margin: 2rem auto 5rem;
-            padding: 0 2rem;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2.5rem;
+            color: white;
         }
 
         /* Contenedor Principal */
         .contenedor-principal {
             max-width: 1200px;
-            margin: 2rem auto 5rem;
+            margin: 0 auto 5rem;
             padding: 0 2rem;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -166,8 +215,6 @@
         .tarjeta-header h3 {
             font-size: 1.5rem;
             font-weight: 600;
-
-            cursor: pointer;
         }
 
         .tarjeta-body {
@@ -175,16 +222,6 @@
             flex-grow: 1;
             display: flex;
             flex-direction: column;
-
-
-            max-height: 0;
-            overflow: hidden;
-            padding: 0 2rem;
-            transition: max-height 0.4s ease, padding 0.3s ease;
-        }
-        .tarjeta.activa .tarjeta-body {
-            max-height: 3000px; /* valor grande */
-            padding: 2rem;
         }
 
         .tarjeta-body p {
@@ -202,26 +239,16 @@
             background: linear-gradient(to right, #e67e22, #f39c12);
 
         }
-     
+       /* .mision .tarjeta-header {
+            background: linear-gradient(to right, #1a5276, #3498db);
+        }
+
+        .vision .tarjeta-header {
+            background: linear-gradient(to right, #16a085, #1abc9c);
+        }*/
 
         .objetivo .tarjeta-header {
             background: linear-gradient(to right, #58BB43, #78D23D);
-        }
-        .item {
-            background: #f2f2f2;
-            padding: 12px;
-            border-radius: 8px;
-            margin-bottom: 5px;
-            cursor: pointer;
-            user-select: none;
-        }
-        .descripcion {
-            display: none;
-            background: #e8e8e8;
-            padding: 12px;
-            border-radius: 8px;
-            margin-top: 5px;
-            margin-bottom: 1rem;
         }
         /*Videos relacionados con DATA-PINCC*/
         .videos {
@@ -371,37 +398,3 @@
         grid-template-columns: 1fr;
     }
 }
-/**Quienes somos**/
-.quienessomos__contenedor{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    margin-left: 15%;
-    margin-top: 5%;
-}
-@media (max-width: 576px){
-    .quienessomos__contenedor{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-    margin-left: 15%;
-    margin-top: 5%;
-
-}
-}
-
-.quienessomos__titulo{
-    text-align: center;
-    font-size:  70px;
-}
-.quienessomos__colaboradores{
-    width: 400px;
-
-}
-.quienessomos__colaboradores__imagen{
-    width: 250px; /* Ancho igual al alto */
-    height: 250px; /* Alto igual al ancho */
-    border-radius: 50%
-
-}
-

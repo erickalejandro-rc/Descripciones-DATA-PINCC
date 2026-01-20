@@ -16,9 +16,10 @@
                 
             </div>
             <nav class="nav-links">
-                <a href="#"><i class="fas fa-info-circle"></i> Descripciones</a>
                 <a href="https://datapincc.unam.mx/datapincc/#"><i class="fas fa-home"></i> Principal</a>
-                <a href="#"><i class="fas fa-info-circle"></i> Aceca de DATA-PINCC</a>
+                <a href="Indexdescreipciones.html"><i class="fas fa-info-circle"></i> Descripciones</a>
+                <a href="index2.html"><i class="fas fa-info-circle"></i> Aceca de DATA-PINCC</a>
+                <a href="acercadenosotros.html"><i class="fa-solid fa-users"></i>¿Quienes somos?</a>
                 
                 
             </nav>
@@ -27,9 +28,50 @@
     </a>
         </div>
     </header>
+    <section class="conceptos">
+    <section>
+       
+            
+                <h2>CMIP6 </h2>
+                <h3>(Coupled Model Intercomparison Project (CMIP))</h3>
+                
+                
+                <p>Es el Proyecto de Comparación de Modelos Acoplados es una actividad de modelización climática del Programa Mundial de Investigaciones Climáticas (PMIC) que consiste en coordinar y archivar simulaciones de modelos climáticos basadas en datos de entrada compartidos por grupos de elaboración de modelos de todo el mundo. 
+                </p>
+                
+            
+             
+    </section>
+    <section>
+        <h2>GCM</h2>
+        <p>Los modelos acoplados océano-atmósfera de circulación general (Modelos de Circulación General o GCM) son modelos matemáticos que representan la física del sistema climático, incluida la atmósfera, el océano, la superficie terrestre y la criosfera (Randall et al., 2007). Los GCM son herramientas ampliamente utilizadas para estudiar el sistema climático global tanto para períodos históricos como futuros.</p>
+    </section>
+    <section>
+        <h2>Método Delta</h2>
+        <p>Este método se emplea para generar escenarios climáticos futuros mediante la suma de un ‘Delta’ (entre los valores proyectados futuros y presentes del modelo) a los datos observados de referencia.</p>
+        <p>ProyPeriodo Futuro = Climareferencia Observado + Deltaperiodo Futuro</p>
+        <p>ProyPeriodo Futuro = Climareferencia Observado + (Varperiodo Futuro – VarHistorical Referencia)</p>
+    </section>
+    <section>
+        <h2>Variables</h2>
+        <p>Es una medida o cantidad que se utiliza para describir el estado o comportamiento de la atmósfera terrestre y su impacto en el clima. Estas variables pueden ser cuantitativas o cualitativas, y se miden en intervalos regulares de tiempo en diferentes regiones del mundo. El seguimiento y análisis de estas variables climáticas es fundamental para comprender los patrones climáticos a largo plazo y su impacto en la vida humana y el medio ambiente.</p>
+    </section>
+    <section>
+        <h2>Escenarios de emisiones</h2>
+        <h3>Escenarios de Concentraciones Representativas
+            (Representative Concentration Pathways, RCP)
+        </h3>
+        <p>Son escenarios de emisiones utilizados para explorar diferentes posibles futuros de emisiones de gases de efecto invernadero (GEI) y representan el forzamiento radiativo al 2100. 
+            Los RCPs proporcionan una gama de posibles niveles futuros de forzamiento radiativo, que van desde bajos (RCP2.6) a muy altos (RCP8.5), dependiendo de las políticas de mitigación y adaptación al cambio climático adoptadas.
+        </p>
+        <h3>Escenarios de Trayectoria Compartida
+            (Shared Socioeconomic Pathways, SSP)
+        </h3>
+        <p>Los SSPs describen posibles futuros socioeconómicos globales, incluyendo población, desarrollo económico, tecnología y políticas. Estos escenarios no especifican directamente los niveles de emisiones de GEI, pero proporcionan información sobre cómo podrían evolucionar los factores socioeconómicos que influyen en las emisiones.</p>
+    </section>
 
     
-    <section class="poster">
+    
      
     </section>
 
@@ -342,6 +384,15 @@
         descripcion.style.display = descripcion.style.display === "block" ? "none" : "block";
         }
     </script>
+    <script>
+    document.querySelectorAll('.tarjeta-header').forEach(header => {
+        header.addEventListener('click', () => {
+            const tarjeta = header.parentElement;
+            tarjeta.classList.toggle('activa');
+        });
+    });
+    </script>
+
     
 </body>
 </html>    
