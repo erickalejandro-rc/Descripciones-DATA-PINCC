@@ -104,7 +104,7 @@
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
-            transition: all 0.3s ease;
+            transition: all 0.7s ease;
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
 
@@ -113,25 +113,18 @@
             transform: translateY(-3px);
             box-shadow: 0 6px 20px rgba(0,0,0,0.3);
         }
-        /**Contenedor conceptos**/
-        .conceptos{
-            max-width: 1200px;
+        /**Contenedor principal**/
+        .contenedor__principal{
+            max-width: 1500px;
             margin: 2rem auto 5rem;
             padding: 0 2rem;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: 1fr;
             gap: 2.5rem;
         }
+      
 
-        /* Contenedor Principal */
-        .contenedor-principal {
-            max-width: 1200px;
-            margin: 2rem auto 5rem;
-            padding: 0 2rem;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2.5rem;
-        }
+  
 
         /* Tarjetas */
         .tarjeta {
@@ -155,7 +148,11 @@
             color: white;
             padding: 1.5rem;
             text-align: center;
+            cursor: pointer;
         }
+        
+
+        
 
         .tarjeta-header i {
             font-size: 2.5rem;
@@ -197,6 +194,35 @@
             text-align: center;
         }
 
+        .concepto {
+         display: block;
+        }
+
+        .ejemplos {
+        display: none;
+        }
+
+        /**botones**/
+        .btn-ejemplos,
+        .btn-volver {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            margin: 15px 0;
+            transition: 0.3s ease;
+            align-self: flex-start;
+        }
+
+        .btn-ejemplos:hover,
+        .btn-volver:hover {
+            background: #138d75;
+            transform: translateY(-2px);
+        }
+
         /* Colores específicos para cada tarjeta */
         .QE .tarjeta-header{
             background: linear-gradient(to right, #e67e22, #f39c12);
@@ -223,6 +249,63 @@
             margin-top: 5px;
             margin-bottom: 1rem;
         }
+        .descripcion.activa {
+         display: block;
+            }
+
+        .item.activa {
+            background: #7c7c7c;
+            border-left: 5px solid var(--text);
+            color: white;
+        }
+
+        /**Tabla de Catálogo de Modelos Climáticos CMIP6**/
+        .contenedor-tabla{
+            font-family: Arial, Helvetica, sans-serif;
+             margin: 30px;
+            background: #f5f7fa;
+            text-align: center;
+        }
+        .mini-menu {
+            margin-bottom: 15px;
+        }
+        input, select {
+        padding: 6px;
+        margin-right: 10px;
+        }
+        table {
+                width: 100%;
+                border-collapse: collapse;
+                background: #ffffff;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            }
+            th, td {
+                padding: 8px 10px;
+                border-bottom: 1px solid #ddd;
+                font-size: 14px;
+            }
+            th {
+                background: #34495e;
+                color: #ffffff;
+                cursor: pointer;
+            }
+            tr:hover {
+                background: #f1f1f1;
+            }
+            .tag {
+                padding: 2px 6px;
+                border-radius: 4px;
+                font-size: 12px;
+                color: #fff;
+            }
+            .CM { background: #2980b9; }
+            .ESM { background: #27ae60; }
+            .small {
+                color: #555;
+                font-size: 12px;
+            }
+
+
         /*Videos relacionados con DATA-PINCC*/
         .videos {
             background: var(--dark);
