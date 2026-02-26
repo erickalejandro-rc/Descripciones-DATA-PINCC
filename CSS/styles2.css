@@ -94,7 +94,7 @@
         /* Poster republica mexicana */
         .poster {
             background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
-                        url(MAPA-SATELITAL.webp);
+                        url(../imagenes/MAPA-SATELITAL.webp);
             background-size: cover; /* Cubre todo el espacio disponible */
             background-position: center; /* Centra la imagen */
             background-repeat: no-repeat;            
