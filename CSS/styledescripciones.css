@@ -201,6 +201,10 @@
         .ejemplos {
         display: none;
         }
+        .escenariosSSP__ejemplos__titulo{
+            text-align: center;
+            margin-bottom: 2%;
+        }
 
         /**botones**/
         .btn-ejemplos,
